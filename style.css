@@ -6,231 +6,345 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7ff;
-    color: #1e293b;
+    background: #f5f3ed;
+    color: #2f332d;
+    line-height: 1.6;
 }
 
 
 /* =========================
-   Header
+   HEADER
 ========================= */
 
 header {
-    background: linear-gradient(135deg, #2563eb, #4f46e5);
-    color: white;
+    position: relative;
+    overflow: hidden;
+     background: #aebda3;
+    color: #293328;
     text-align: center;
-    padding: 55px 20px;
+    padding: 75px 20px 80px;
+    border-bottom: 1px solid #9eac94;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: #c8d3bd;
+    border-radius: 50%;
+    top: -150px;
+    left: -80px;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    background: #e9dccb;
+    border-radius: 50%;
+    bottom: -220px;
+    right: -80px;
 }
 
 header h1 {
-    font-size: 42px;
+    position: relative;
+    z-index: 1;
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -1px;
     margin-bottom: 12px;
 }
 
 header p {
-    font-size: 17px;
-    margin-top: 8px;
-    color: #e0e7ff;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    color: #596353;
+    margin-top: 7px;
 }
 
 
 /* =========================
-   Main
+   MAIN
 ========================= */
 
 main {
-    max-width: 1150px;
+    max-width: 1180px;
     margin: auto;
-    padding: 55px 20px;
+    padding: 65px 20px;
 }
 
 .assignments h2 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #1e293b;
+    font-size: 30px;
+    font-weight: 600;
+    color: #343a32;
+    margin-bottom: 45px;
+    letter-spacing: -0.3px;
+}
+
+.assignments h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #7b896d;
+    border-radius: 10px;
+    margin: 13px auto 0;
 }
 
 
 /* =========================
-   Assignment Cards
+   CARDS
 ========================= */
 
 .assignment-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 26px;
 }
 
 .assignment-card {
-    background: white;
-    padding: 30px 25px;
-    border-radius: 16px;
+    position: relative;
+    background: #fffdf9;
+    padding: 32px 27px;
+    border-radius: 20px;
     text-align: center;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.08);
-    transition: 0.3s ease;
+    border: 1px solid #e6e1d7;
+    box-shadow: 0 6px 20px rgba(69, 73, 60, 0.06);
+    transition: all 0.35s ease;
 }
 
 .assignment-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(69, 73, 60, 0.12);
+    border-color: #c8d1be;
 }
+
+
+/* Soft top accent */
+
+.assignment-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    right: 28px;
+    height: 3px;
+    background: #879578;
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* =========================
+   LAB BADGE
+========================= */
 
 .assignment-card span {
     display: inline-block;
-    background: #eef2ff;
-    color: #4f46e5;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 15px;
+    background: #edf1e9;
+    color: #66745d;
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 17px;
 }
 
+
+/* =========================
+   CARD TEXT
+========================= */
+
 .assignment-card h3 {
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 12px;
-    color: #1e293b;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #343a32;
+    margin-bottom: 13px;
 }
 
 .assignment-card p {
-    color: #64748b;
-    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #77796f;
+    margin-bottom: 23px;
 }
 
 
 /* =========================
-   View Assignment Button
+   BUTTON
 ========================= */
 
 .assignment-card button {
-    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    background: #6f7d66;
     color: white;
     border: none;
-    padding: 11px 20px;
-    border-radius: 8px;
+    padding: 11px 22px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .assignment-card button:hover {
-    transform: scale(1.04);
+    background: #596650;
+    transform: translateY(-2px);
 }
 
 
 /* =========================
-   Lab Details
+   LAB DETAILS
 ========================= */
 
 .lab-details {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 35px auto;
     padding: 45px;
-    background: white;
-    border-radius: 18px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    background: #fffdf9;
+    border-radius: 20px;
+    border: 1px solid #e6e1d7;
+    box-shadow: 0 10px 30px rgba(69, 73, 60, 0.07);
 }
 
 
-/* Lab Heading */
+/* Lab title */
 
 .lab-details h2 {
     font-size: 32px;
+    line-height: 1.3;
+    color: #343a32;
     margin-bottom: 10px;
-    color: #1e293b;
 }
 
 .lab-details h3 {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #718067;
     margin-bottom: 30px;
-    color: #4f46e5;
 }
 
 
-/* Section Headings */
+/* Section headings */
 
 .lab-details h4 {
     font-size: 19px;
-    margin-top: 28px;
-    margin-bottom: 10px;
-    color: #2563eb;
+    color: #6f7d66;
+    margin-top: 30px;
+    margin-bottom: 11px;
 }
 
 
 /* Paragraph */
 
 .lab-details p {
+    color: #5f6259;
     line-height: 1.8;
-    color: #475569;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* Lists */
+
+.lab-details ul,
+.lab-details ol {
+    margin: 10px 0 20px 25px;
+    color: #5f6259;
+}
+
+.lab-details li {
+    margin-bottom: 8px;
+    line-height: 1.7;
 }
 
 
 /* =========================
-   Lab Images
+   IMAGES
 ========================= */
 
 .lab-details img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 25px auto;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+    margin: 28px auto;
+    border-radius: 14px;
+    border: 1px solid #e3ded3;
+    box-shadow: 0 8px 25px rgba(69, 73, 60, 0.10);
 }
 
 
 /* =========================
-   Back Button
+   BACK BUTTON
 ========================= */
 
 .back-button {
-    background: #eef2ff;
-    color: #4f46e5;
-    border: 1px solid #c7d2fe;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #edf1e9;
+    color: #66745d;
+    border: 1px solid #d5ddce;
     padding: 10px 18px;
-    border-radius: 8px;
+    border-radius: 9px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 28px;
-    transition: 0.3s;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 
 .back-button:hover {
-    background: #4f46e5;
+    background: #6f7d66;
     color: white;
-    transform: translateX(-3px);
+    border-color: #6f7d66;
+    transform: translateX(-4px);
 }
 
 
 /* =========================
-   Mobile
+   MOBILE
 ========================= */
 
 @media (max-width: 600px) {
 
     header {
-        padding: 40px 15px;
+        padding: 55px 15px 65px;
     }
 
     header h1 {
         font-size: 32px;
     }
 
+    header p {
+        font-size: 15px;
+    }
+
     main {
-        padding: 40px 15px;
+        padding: 45px 15px;
+    }
+
+    .assignments h2 {
+        font-size: 27px;
+        margin-bottom: 35px;
+    }
+
+    .assignment-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .assignment-card {
+        padding: 28px 22px;
     }
 
     .lab-details {
-        padding: 25px 20px;
-        margin: 30px 15px;
+        padding: 28px 20px;
+        margin: 25px 0;
+        border-radius: 16px;
     }
 
     .lab-details h2 {
@@ -241,3 +355,4 @@ main {
         font-size: 19px;
     }
 }
+
