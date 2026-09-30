@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #1e293b;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 17px;
+    margin-top: 8px;
+    color: #e0e7ff;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.assignments h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+
+/* =========================
+   Assignment Cards
+========================= */
+
+.assignment-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.assignment-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.08);
+    transition: 0.3s ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+}
+
+.assignment-card span {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.assignment-card h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.assignment-card p {
+    color: #64748b;
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   View Assignment Button
+========================= */
+
+.assignment-card button {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.assignment-card button:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   Lab Details
+========================= */
+
+.lab-details {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 45px;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* Lab Heading */
+
+.lab-details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.lab-details h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #4f46e5;
+}
+
+
+/* Section Headings */
+
+.lab-details h4 {
+    font-size: 19px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+
+/* Paragraph */
+
+.lab-details p {
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   Lab Images
+========================= */
+
+.lab-details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================
+   Back Button
+========================= */
+
+.back-button {
+    background: #eef2ff;
+    color: #4f46e5;
+    border: 1px solid #c7d2fe;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #4f46e5;
+    color: white;
+    transform: translateX(-3px);
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 40px 15px;
+    }
+
+    .lab-details {
+        padding: 25px 20px;
+        margin: 30px 15px;
+    }
+
+    .lab-details h2 {
+        font-size: 27px;
+    }
+
+    .lab-details h3 {
+        font-size: 19px;
+    }
+}
