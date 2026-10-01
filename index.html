@@ -135,6 +135,14 @@
                     <button>View Assignment</button>
                 </div>
 
+                <!-- Lab Assignment 11 -->
+                <div class="assignment-card">
+                    <span>LAB 11</span>
+                    <h3>Lab Work – Tableau Dashboard</h3>
+                    <p>Tableau Dashboard</p>
+                    <button>View Assignment</button>
+                </div>
+                
             </div>
 
         </section>
@@ -710,6 +718,234 @@
 
     <img src="images/lab10-visualization1.png.png"
          alt="Lab 10 Tableau Practical">
+
+</section>
+
+<!-- Lab 11 Details -->
+
+<section id="lab11-details" class="lab-details">
+
+    <button class="back-button" onclick="showAllLabs()">
+        ← Back to All Lab Work
+    </button>
+
+    <h2>Lab Assignment 11</h2>
+
+    <h3>Lab Work: Tableau Dashboard</h3>
+
+    <p><strong>Date:</strong> 01.10.2026</p>
+
+    <p>
+        <strong>Task:</strong> Explore the Sample Superstore Dataset and create
+        3 dashboards for at least 3 different audiences.
+    </p>
+
+
+    <!-- Dashboard I -->
+
+    <h4>I. Sales Manager Dashboard</h4>
+
+    <p><strong>Dimensions:</strong>
+        Category, Sub-Category, Segment, Region, Order Date, Order ID
+    </p>
+
+    <p><strong>Measures:</strong>
+        Sales, Profit
+    </p>
+
+    <p><strong>Why was this dashboard created?</strong></p>
+
+    <p>
+        This dashboard was created to get a quick view of overall sales
+        performance and understand how sales are distributed.
+    </p>
+
+    <p><strong>Who is the audience?</strong></p>
+
+    <p>
+        The main audience is a Sales Manager, who needs to monitor sales
+        and compare different categories, sub-categories and customer segments.
+    </p>
+
+    <p><strong>Context:</strong></p>
+
+    <p>
+        The dashboard uses the Sample Superstore dataset to show sales
+        performance through different charts and KPI cards. It helps the
+        manager view the important information in one place.
+    </p>
+
+    <p><strong>What does the dashboard show?</strong></p>
+
+    <ul>
+        <li>Total Sales and Total Profit using KPI Cards</li>
+        <li>Sales by Category using a Bar Chart</li>
+        <li>Sales by Sub-Category using a Bar Chart</li>
+        <li>Sales by Segment using a Bar Chart</li>
+        <li>Sales Trend Over Time using a Line Chart</li>
+        <li>Region Filter for viewing sales data by region</li>
+    </ul>
+
+    <p><strong>Key Insights:</strong></p>
+
+    <p>
+        The dashboard makes it easier to see which categories, sub-categories
+        and customer segments have higher sales. The sales trend also helps
+        in understanding how sales change over time.
+    </p>
+
+    <p><strong>Order ID:</strong></p>
+
+    <p>
+        Order ID was used with Count (Distinct) to calculate the number of
+        orders where required.
+    </p>
+
+    <img src="images/lab11-visualization1.png.png"
+         alt="Lab 11 Sales Manager Dashboard">
+
+
+    <!-- Dashboard II -->
+
+    <h4>II. Regional Performance Dashboard</h4>
+
+    <p><strong>Dimensions:</strong>
+        Region, State, Order Date, Order ID
+    </p>
+
+    <p><strong>Measures:</strong>
+        Sales, Profit
+    </p>
+
+    <p><strong>Who is the audience?</strong></p>
+
+    <p>
+        The main audience for this dashboard is a Regional Manager, who
+        needs to compare the performance of different regions and states.
+    </p>
+
+    <p><strong>Why was this dashboard created?</strong></p>
+
+    <p>
+        This dashboard was created to get a clear view of sales and profit
+        across different regions. It helps the manager compare regions,
+        check state-wise sales, and understand how sales change over time.
+    </p>
+
+    <p><strong>Context:</strong></p>
+
+    <p>
+        The dashboard uses the Sample Superstore dataset to compare sales
+        and profit across different regions and states. It also shows
+        regional trends and the relationship between sales and profit.
+    </p>
+
+    <p><strong>What does the dashboard show?</strong></p>
+
+    <ul>
+        <li>Total Sales — KPI Card</li>
+        <li>Total Profit — KPI Card</li>
+        <li>Total Orders — KPI Card</li>
+        <li>Average Profit — KPI Card</li>
+        <li>Sales by Region — Bar Chart</li>
+        <li>Profit by Region — Bar Chart</li>
+        <li>Sales by State — Filled Map</li>
+        <li>Sales Trend by Region — Line Chart</li>
+        <li>Sales vs Profit by Region — Scatter Plot</li>
+        <li>Region Filter</li>
+    </ul>
+
+    <p><strong>Key Insights:</strong></p>
+
+    <p>
+        The dashboard makes it easier to compare regional performance and
+        identify areas with higher or lower sales and profit.
+    </p>
+
+    <p><strong>Order ID:</strong></p>
+
+    <p>
+        Order ID was used with Count (Distinct) to calculate Total Orders.
+    </p>
+
+    <img src="images/lab11-visualization2.png.png"
+         alt="Lab 11 Regional Performance Dashboard">
+
+
+    <!-- Dashboard III -->
+
+    <h4>III. Product Performance Dashboard</h4>
+
+    <p><strong>Dimensions:</strong>
+        Category, Sub-Category, Segment, Product Name, Order Date
+    </p>
+
+    <p><strong>Measures:</strong>
+        Sales, Profit, Quantity, Discount
+    </p>
+
+    <p><strong>Audience:</strong></p>
+
+    <p>
+        The dashboard is made for a Product Manager who wants to check
+        product sales, profit, quantity and discounts.
+    </p>
+
+    <p><strong>Why was this dashboard created?</strong></p>
+
+    <p>
+        The main purpose of this dashboard is to get a clear idea of
+        product performance and understand which categories and
+        sub-categories are performing better.
+    </p>
+
+    <p><strong>Context:</strong></p>
+
+    <p>
+        The dashboard was created using the Sample Superstore dataset to
+        understand how different products, categories and sub-categories
+        are performing.
+    </p>
+
+    <p><strong>How I Created It:</strong></p>
+
+    <p>
+        I created different worksheets in Tableau and used fields like
+        Sales, Profit, Quantity, Discount, Category and Sub-Category.
+        I used different charts and KPI cards and then combined them
+        into one dashboard.
+    </p>
+
+    <p><strong>What Does the Dashboard Show?</strong></p>
+
+    <p>
+        It shows Total Products, Total Categories and Average Discount,
+        along with sales, profit and quantity details. It also shows
+        sales by category and segment, profit by sub-category, quantity
+        by category, the relation between sales and profit, the relation
+        between discount and profit, and the profit trend over time.
+    </p>
+
+    <p><strong>Functions/Features Used:</strong></p>
+
+    <ul>
+        <li>Filters to view specific data</li>
+        <li>Marks Card to change chart types and appearance</li>
+        <li>Show Me to create different charts</li>
+        <li>Measure options like Sum, Count and Average</li>
+        <li>Color, Size, Label and Detail to make charts easier to understand</li>
+    </ul>
+
+    <p><strong>Key Insights:</strong></p>
+
+    <p>
+        The dashboard helps identify categories and sub-categories with
+        higher sales and profit. It also helps understand how discount
+        is related to profit and how profit changes over time.
+    </p>
+
+    <img src="images/lab11-visualization3.png.png"
+         alt="Lab 11 Product Performance Dashboard">
 
 </section>
 
