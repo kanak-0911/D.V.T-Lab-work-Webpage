@@ -26,6 +26,29 @@ header {
     border-bottom: 1px solid #9eac94;
 }
 
+.university-header {
+    position: relative;
+    z-index: 2;
+    max-width: 1180px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.university-header img {
+    width: 220px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.department-name {
+    color: #3f493b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 /* Decorative shapes */
 header::before {
     content: "";
