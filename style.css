@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f3ed;
-    color: #2f332d;
+    background: #eef5ef;
+    color: #26382d;
     line-height: 1.6;
 }
 
@@ -19,150 +19,228 @@ body {
 header {
     position: relative;
     overflow: hidden;
-    background: #aebda3;
-    color: #293328;
+    background: linear-gradient(135deg, #b7d0be 0%, #a5c5ae 52%, #d7e5d8 100%);
+    color: #26382d;
     text-align: center;
-    padding: 90px 20px 95px;
-    border-bottom: 1px solid #9eac94;
+    padding: 35px 20px 85px;
+    border-bottom: 1px solid #9bb8a2;
 }
 
-.university-header {
-    position: relative;
-    z-index: 2;
-    max-width: 1180px;
-    margin: 0 auto 35px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.university-header img {
-    width: 220px;
-    height: 180px;
-    object-fit: contain;
-}
+/* Decorative background shapes */
 
-.department-name {
-    color: #3f493b;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* Decorative shapes */
 header::before {
     content: "";
     position: absolute;
-    width: 420px;
-    height: 420px;
-    background: #9aaa8f;
+
+    width: 450px;
+    height: 450px;
+
+    background: #8fb49a;
+
     border-radius: 50%;
-    top: -260px;
-    left: -130px;
-    opacity: 0.45;
+
+    top: -300px;
+    left: -150px;
+
+    opacity: 0.30;
 }
 
 header::after {
     content: "";
     position: absolute;
-    width: 430px;
-    height: 430px;
-    background: #d2c3ae;
+
+    width: 500px;
+    height: 500px;
+
+    background: #dcebdd;
+
     border-radius: 50%;
-    bottom: -300px;
-    right: -140px;
-    opacity: 0.55;
+
+    bottom: -370px;
+    right: -180px;
+
+    opacity: 0.65;
 }
+
+
+/* =========================
+   UNIVERSITY HEADER
+========================= */
+
+.university-header {
+    position: relative;
+    z-index: 3;
+
+    max-width: 1180px;
+
+    margin: 0 auto 55px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* University logo */
+
+.university-header img {
+    width: 200px;
+    height: 170px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background: transparent;
+
+    filter: drop-shadow(
+        0 5px 8px rgba(44, 70, 51, 0.14)
+    );
+}
+
+
+/* Department name */
+
+.department-name {
+    color: #294333;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    padding: 13px 20px;
+
+    border-left: 4px solid #5f8a6c;
+
+    background: rgba(255, 255, 255, 0.40);
+
+    border-radius: 0 12px 12px 0;
+
+    box-shadow:
+        0 6px 16px rgba(45, 76, 55, 0.08);
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
 
 .hero-content {
     position: relative;
-    z-index: 1;
-    max-width: 760px;
+    z-index: 2;
+
+    max-width: 800px;
+
     margin: auto;
 }
 
+
+/* Top label */
+
 .hero-label {
     display: inline-block;
-    padding: 7px 16px;
+
+    padding: 8px 18px;
+
     margin-bottom: 22px;
-    border: 1px solid rgba(63, 73, 59, 0.25);
+
+    border: 1px solid rgba(53, 87, 64, 0.25);
+
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.25);
-    color: #4b5746;
+
+    background: rgba(255, 255, 255, 0.40);
+
+    color: #3d5d46;
+
     font-size: 11px;
+
     font-weight: 700;
-    letter-spacing: 1.5px;
+
+    letter-spacing: 1.6px;
+
+    box-shadow:
+        0 4px 12px rgba(45, 76, 55, 0.05);
 }
+
+
+/* Main title */
 
 header h1 {
+    position: relative;
+    z-index: 2;
+
     font-size: 52px;
+
     line-height: 1.12;
+
     font-weight: 700;
+
     letter-spacing: -1.5px;
+
     margin-bottom: 20px;
+
+    color: #243a2b;
+
+    text-shadow:
+        0 2px 1px rgba(255, 255, 255, 0.20);
 }
 
+
+/* Description */
+
 .hero-description {
-    max-width: 600px;
-    margin: 0 auto 24px;
-    color: #4f5a4a;
+    max-width: 620px;
+
+    margin: 0 auto 25px;
+
+    color: #47604e;
+
     font-size: 17px;
+
     line-height: 1.7;
 }
 
+
+/* Student information */
+
 .hero-student {
     display: inline-flex;
+
     align-items: center;
+
+    justify-content: center;
+
     gap: 10px;
-    color: #3f493b;
+
+    padding: 9px 19px;
+
+    color: #36533e;
+
     font-size: 14px;
+
     font-weight: 600;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 5px 15px rgba(45, 76, 55, 0.06);
 }
 
 .hero-student span {
     opacity: 0.5;
 }
 
-/* Small label */
-
-header::marker {
-    display: none;
-}
-
-header h1 {
-    position: relative;
-    z-index: 1;
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -1.2px;
-    margin-bottom: 14px;
-}
-
-
-/* Subtitle */
-
-header p {
-    position: relative;
-    z-index: 1;
-    font-size: 17px;
-    color: #4f5a4a;
-    margin-top: 8px;
-}
-
-
-/* Give the student information a subtle style */
-
-header p:last-child {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 8px 18px;
-    background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-radius: 30px;
-    color: #3f493b;
-    font-size: 14px;
-    font-weight: 600;
-}
 
 /* =========================
    MAIN
@@ -170,37 +248,64 @@ header p:last-child {
 
 main {
     max-width: 1180px;
+
     margin: auto;
-    padding: 65px 20px;
+
+    padding: 70px 20px;
 }
+
+
+/* Section heading */
 
 .assignments h2 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: #343a32;
-    margin-bottom: 45px;
-    letter-spacing: -0.3px;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #294333;
+
+    margin-bottom: 16px;
+
+    letter-spacing: -0.4px;
 }
+
+
+/* Heading accent */
 
 .assignments h2::after {
     content: "";
+
     display: block;
-    width: 45px;
-    height: 3px;
-    background: #7b896d;
-    border-radius: 10px;
-    margin: 13px auto 0;
+
+    width: 55px;
+    height: 4px;
+
+    background: #659174;
+
+    border-radius: 20px;
+
+    margin: 14px auto 0;
 }
+
+
+/* Section intro */
 
 .section-intro {
     text-align: center;
-    max-width: 650px;
-    margin: -25px auto 42px;
-    color: #77796f;
+
+    max-width: 680px;
+
+    margin: 0 auto 45px;
+
+    color: #718077;
+
     font-size: 15px;
-    line-height: 1.7;
+
+    line-height: 1.8;
 }
+
 
 /* =========================
    CARDS
@@ -208,88 +313,135 @@ main {
 
 .assignment-container {
     position: relative;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(270px, 1fr));
+
     gap: 28px;
 }
+
 
 /* Individual card */
 
 .assignment-card {
     position: relative;
-    background: #fffdf9;
-    padding: 36px 30px 30px;
+
+    background: #fbfdfb;
+
+    padding: 32px 30px 30px;
+
     border-radius: 20px;
+
     text-align: left;
-    border: 1px solid #e5e1d8;
-    box-shadow: 0 6px 20px rgba(69, 73, 60, 0.055);
+
+    border: 1px solid #dbe7dd;
+
+    box-shadow:
+        0 7px 20px rgba(48, 78, 57, 0.07),
+        0 2px 5px rgba(48, 78, 57, 0.03);
+
     overflow: hidden;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
 }
 
-/* Top accent */
+
+/* Card top accent */
 
 .assignment-card::before {
     content: "";
+
     position: absolute;
+
     top: 0;
     left: 0;
+
     width: 100%;
     height: 4px;
-    background: #879578;
+
+    background: linear-gradient(
+        90deg,
+        #5f8b6b,
+        #8fb79a,
+        #b5cfba
+    );
 }
 
-/* Subtle decorative circle */
+
+/* Card decorative circle */
 
 .assignment-card::after {
     content: "";
+
     position: absolute;
-    width: 120px;
-    height: 120px;
-    background: #eef1e9;
+
+    width: 145px;
+    height: 145px;
+
+    background: #e5f0e7;
+
     border-radius: 50%;
-    right: -55px;
-    bottom: -60px;
-    opacity: 0.75;
-    transition: transform 0.4s ease;
+
+    right: -65px;
+    bottom: -70px;
+
+    opacity: 0.85;
+
+    transition:
+        transform 0.45s ease;
 }
 
-/* Hover */
+
+/* Card hover */
 
 .assignment-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 38px rgba(69, 73, 60, 0.12);
+    transform: translateY(-9px);
+
+    border-color: #bdd3c3;
+
+    box-shadow:
+        0 20px 42px rgba(48, 78, 57, 0.14),
+        0 5px 10px rgba(48, 78, 57, 0.05);
 }
 
 .assignment-card:hover::after {
-    transform: scale(1.25);
+    transform: scale(1.35);
 }
 
 
-/* Lab number */
+/* =========================
+   LAB BADGE
+========================= */
 
 .assignment-card span {
     position: relative;
-    z-index: 1;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 2;
 
-    width: 48px;
-    height: 48px;
+    display: inline-block;
 
-    background: #eef2e9;
-    color: #66745d;
+    background: #e4f0e6;
 
-    border: 1px solid #d5ddce;
-    border-radius: 50%;
+    color: #4e775b;
 
-    font-size: 10px;
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    border: 1px solid #cbdccc;
+
+    font-size: 11px;
+
     font-weight: 700;
-    letter-spacing: 0.5px;
 
-    margin-bottom: 22px;
+    letter-spacing: 0.7px;
+
+    margin-bottom: 19px;
 }
 
 
@@ -297,13 +449,16 @@ main {
 
 .assignment-card h3 {
     position: relative;
-    z-index: 1;
+
+    z-index: 2;
 
     font-size: 19px;
-    line-height: 1.5;
-    font-weight: 600;
 
-    color: #343a32;
+    line-height: 1.5;
+
+    font-weight: 700;
+
+    color: #2e4435;
 
     margin-bottom: 12px;
 }
@@ -313,78 +468,16 @@ main {
 
 .assignment-card p {
     position: relative;
-    z-index: 1;
 
-    font-size: 14px;
-    line-height: 1.7;
-
-    color: #77796f;
-
-    margin-bottom: 25px;
-}
-
-
-/* Button */
-
-.assignment-card button {
-    position: relative;
     z-index: 2;
 
-    background: #6f7d66;
-    color: #ffffff;
-
-    border: none;
-    padding: 10px 19px;
-
-    border-radius: 9px;
-
-    cursor: pointer;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    transition: all 0.3s ease;
-}
-
-.assignment-card button:hover {
-    background: #596650;
-    transform: translateY(-2px);
-}
-
-/* =========================
-   LAB BADGE
-========================= */
-
-.assignment-card span {
-    display: inline-block;
-    background: #edf1e9;
-    color: #66745d;
-    padding: 6px 13px;
-    border-radius: 30px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    margin-bottom: 17px;
-}
-
-
-/* =========================
-   CARD TEXT
-========================= */
-
-.assignment-card h3 {
-    font-size: 19px;
-    line-height: 1.5;
-    font-weight: 600;
-    color: #343a32;
-    margin-bottom: 13px;
-}
-
-.assignment-card p {
     font-size: 14px;
+
     line-height: 1.7;
-    color: #77796f;
-    margin-bottom: 23px;
+
+    color: #758178;
+
+    margin-bottom: 24px;
 }
 
 
@@ -393,20 +486,39 @@ main {
 ========================= */
 
 .assignment-card button {
-    background: #6f7d66;
-    color: white;
+    position: relative;
+
+    z-index: 3;
+
+    background: #5f8569;
+
+    color: #ffffff;
+
     border: none;
-    padding: 11px 22px;
+
+    padding: 11px 21px;
+
     border-radius: 10px;
+
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .assignment-card button:hover {
-    background: #596650;
+    background: #466c51;
+
     transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 15px rgba(48, 78, 57, 0.18);
 }
 
 
@@ -416,12 +528,22 @@ main {
 
 .lab-details {
     max-width: 1000px;
-    margin: 35px auto;
-    padding: 48px;
-    background: #fffdf9;
-    border-radius: 22px;
-    border: 1px solid #e5e1d8;
-    box-shadow: 0 12px 32px rgba(69, 73, 60, 0.07);
+
+    margin: 40px auto;
+
+    padding: 50px;
+
+    background: #fbfdfb;
+
+    border-radius: 24px;
+
+    border: 1px solid #dbe7dd;
+
+    box-shadow:
+        0 14px 35px rgba(48, 78, 57, 0.08),
+        0 3px 8px rgba(48, 78, 57, 0.03);
+
+    animation: labAppear 0.45s ease;
 }
 
 
@@ -429,8 +551,11 @@ main {
 
 .lab-details h2 {
     font-size: 32px;
+
     line-height: 1.3;
-    color: #343a32;
+
+    color: #294333;
+
     margin-bottom: 12px;
 }
 
@@ -439,8 +564,11 @@ main {
 
 .lab-details h3 {
     font-size: 20px;
+
     line-height: 1.5;
-    color: #718067;
+
+    color: #62836b;
+
     margin-bottom: 35px;
 }
 
@@ -449,25 +577,36 @@ main {
 
 .lab-details h4 {
     position: relative;
+
     font-size: 18px;
-    font-weight: 600;
-    color: #596650;
-    margin-top: 34px;
+
+    font-weight: 700;
+
+    color: #52735b;
+
+    margin-top: 35px;
+
     margin-bottom: 13px;
-    padding-left: 15px;
+
+    padding-left: 16px;
 }
 
 
-/* Small accent beside heading */
+/* Accent beside heading */
 
 .lab-details h4::before {
     content: "";
+
     position: absolute;
+
     left: 0;
     top: 4px;
+
     width: 4px;
-    height: 20px;
-    background: #879578;
+    height: 21px;
+
+    background: #6d9a78;
+
     border-radius: 5px;
 }
 
@@ -475,9 +614,12 @@ main {
 /* Paragraph */
 
 .lab-details p {
-    color: #5f6259;
+    color: #617066;
+
     font-size: 15px;
+
     line-height: 1.85;
+
     margin-bottom: 15px;
 }
 
@@ -487,11 +629,13 @@ main {
 .lab-details ul,
 .lab-details ol {
     margin: 12px 0 22px 25px;
-    color: #5f6259;
+
+    color: #617066;
 }
 
 .lab-details li {
     margin-bottom: 8px;
+
     line-height: 1.75;
 }
 
@@ -499,29 +643,34 @@ main {
 /* Strong text */
 
 .lab-details strong {
-    color: #3f463b;
+    color: #344d3b;
 }
 
+
 /* =========================
-   IMAGES
+   LAB IMAGES
 ========================= */
 
 .lab-details img {
     max-width: 92%;
+
     height: auto;
+
     display: block;
 
-    margin: 32px auto;
+    margin: 35px auto;
+
     padding: 10px;
 
     background: #ffffff;
 
-    border: 1px solid #dedbd2;
+    border: 1px solid #d7e3d9;
+
     border-radius: 18px;
 
     box-shadow:
-        0 8px 20px rgba(69, 73, 60, 0.08),
-        0 2px 5px rgba(69, 73, 60, 0.04);
+        0 9px 22px rgba(48, 78, 57, 0.09),
+        0 2px 6px rgba(48, 78, 57, 0.04);
 
     transition:
         transform 0.35s ease,
@@ -532,9 +681,10 @@ main {
     transform: translateY(-5px);
 
     box-shadow:
-        0 16px 32px rgba(69, 73, 60, 0.13),
-        0 4px 8px rgba(69, 73, 60, 0.05);
+        0 18px 35px rgba(48, 78, 57, 0.14),
+        0 4px 9px rgba(48, 78, 57, 0.05);
 }
+
 
 /* =========================
    BACK BUTTON
@@ -542,25 +692,60 @@ main {
 
 .back-button {
     display: inline-flex;
+
     align-items: center;
+
     gap: 8px;
+
     background: transparent;
-    color: #6f7d66;
-    border: 1px solid #cdd6c6;
-    padding: 9px 17px;
+
+    color: #5f8569;
+
+    border: 1px solid #bfd2c3;
+
+    padding: 9px 18px;
+
     border-radius: 30px;
+
     cursor: pointer;
+
     font-size: 13px;
-    font-weight: 600;
+
+    font-weight: 700;
+
     margin-bottom: 32px;
+
     transition: all 0.3s ease;
 }
 
 .back-button:hover {
-    background: #6f7d66;
+    background: #5f8569;
+
     color: #ffffff;
-    border-color: #6f7d66;
+
+    border-color: #5f8569;
+
     transform: translateX(-4px);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes labAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
 }
 
 
@@ -568,31 +753,64 @@ main {
    MOBILE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     header {
-        padding: 55px 15px 65px;
+        padding: 25px 15px 65px;
+    }
+
+    .university-header {
+        margin-bottom: 40px;
+
+        padding: 0 5px;
+
+        align-items: flex-start;
+    }
+
+    .university-header img {
+        width: 72px;
+        height: 72px;
+    }
+
+    .department-name {
+        font-size: 13px;
+
+        padding: 9px 12px;
+
+        max-width: 180px;
+
+        text-align: right;
     }
 
     header h1 {
-        font-size: 32px;
+        font-size: 35px;
+
+        letter-spacing: -0.8px;
     }
 
-    header p {
+    .hero-label {
+        font-size: 9px;
+
+        padding: 7px 12px;
+
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
         font-size: 15px;
     }
 
     main {
-        padding: 45px 15px;
+        padding: 50px 15px;
     }
 
     .assignments h2 {
         font-size: 27px;
-        margin-bottom: 35px;
     }
 
     .assignment-container {
         grid-template-columns: 1fr;
+
         gap: 20px;
     }
 
@@ -602,8 +820,10 @@ main {
 
     .lab-details {
         padding: 28px 20px;
+
         margin: 25px 0;
-        border-radius: 16px;
+
+        border-radius: 18px;
     }
 
     .lab-details h2 {
@@ -611,26 +831,10 @@ main {
     }
 
     .lab-details h3 {
-        font-size: 19px;
-    }
-}
-
-/* =========================
-   LAB PAGE ANIMATION
-========================= */
-
-.lab-details {
-    animation: labAppear 0.45s ease;
-}
-
-@keyframes labAppear {
-    from {
-        opacity: 0;
-        transform: translateY(18px);
+        font-size: 18px;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .lab-details img {
+        max-width: 100%;
     }
 }
