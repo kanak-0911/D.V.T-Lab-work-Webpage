@@ -141,6 +141,33 @@ header p:last-child {
     font-weight: 600;
 }
 
+/*University header
+  Logo*/
+.university-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.university-header img {
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.department-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #35402f;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
 /* =========================
    MAIN
 ========================= */
