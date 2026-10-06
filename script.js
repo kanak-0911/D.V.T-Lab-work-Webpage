@@ -9,7 +9,7 @@ labDetails.forEach((lab) => {
 });
 
 
-// Show selected lab
+// Show selected labs
 buttons.forEach((button, index) => {
 
     button.addEventListener("click", function () {
