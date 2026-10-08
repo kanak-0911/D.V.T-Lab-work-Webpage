@@ -151,6 +151,14 @@
                     <p>Tableau Dashboard</p>
                     <button>View Assignment</button>
                 </div>
+
+                <!-- Lab Assignment 12 -->
+<div class="assignment-card">
+    <span>LAB 12</span>
+    <h3>Geospatial Sales & Order Analysis</h3>
+    <p>Tableau Maps & Dashboard</p>
+    <button>View Assignment</button>
+</div>
                 
             </div>
 
@@ -959,6 +967,188 @@
 </section>
 
 </div>
+
+<!-- Lab 12 Details -->
+<section id="lab12-details" class="lab-details">
+
+    <button class="back-button" onclick="showAllLabs()">
+        ← Back to All Lab Work
+    </button>
+
+    <h2>Lab Assignment 12</h2>
+
+    <h3>Geospatial Sales & Order Analysis</h3>
+
+    <h4>Objective</h4>
+
+    <p>
+        The main objective of this dashboard is to understand sales, profit
+        and order concentration across different locations using maps in Tableau.
+    </p>
+
+    <h4>Why was this dashboard made?</h4>
+
+    <p>
+        This dashboard was made to easily compare the performance of different
+        states and cities. Maps make it easier to identify areas with high sales,
+        profit and order activity.
+    </p>
+
+    <h4>Dataset Used</h4>
+
+    <p><strong>Sample Superstore Dataset</strong></p>
+
+    <h4>Dimensions Used</h4>
+
+    <ul>
+        <li>State</li>
+        <li>City</li>
+        <li>Order ID</li>
+    </ul>
+
+    <h4>Why these Dimensions were used?</h4>
+
+    <ul>
+        <li><strong>State:</strong> Used to compare sales between different states.</li>
+        <li><strong>City:</strong> Used to see profit and order activity at city level.</li>
+        <li><strong>Order ID:</strong> Used to identify the number of orders.</li>
+    </ul>
+
+    <h4>Measures Used</h4>
+
+    <ul>
+        <li>Sales</li>
+        <li>Profit</li>
+        <li>Order ID (Count)</li>
+    </ul>
+
+    <h4>Why these Measures were used?</h4>
+
+    <ul>
+        <li><strong>Sales:</strong> Used to find states with higher sales.</li>
+        <li><strong>Profit:</strong> Used to compare profit levels between cities.</li>
+        <li><strong>Order ID:</strong> Used to understand where orders are more concentrated.</li>
+    </ul>
+
+
+    <h4>Visualizations Used</h4>
+
+    <h4>1. Total Sales by State</h4>
+
+    <p><strong>Chart Type:</strong> Filled Map</p>
+
+    <p>
+        <strong>Objective:</strong> To compare the total sales of different states.
+    </p>
+
+    <p>
+        <strong>Why was it made?</strong>
+        It was made to quickly identify which states have higher or lower sales.
+    </p>
+
+    <p>
+        <strong>What does it show?</strong>
+        The map uses different shades for the states according to their sales.
+        Darker shades represent higher sales, while lighter shades represent lower sales.
+    </p>
+
+    <img src="images/lab12-visualization1.png.png"
+         alt="Lab 12 Total Sales by State Filled Map">
+
+
+    <h4>2. Profit Distribution by City</h4>
+
+    <p><strong>Chart Type:</strong> Bubble Map</p>
+
+    <p>
+        <strong>Objective:</strong> To show how profit is distributed across different cities.
+    </p>
+
+    <p>
+        <strong>Why was it made?</strong>
+        It was made to find cities where profit is higher or lower.
+    </p>
+
+    <p>
+        <strong>What does it show?</strong>
+        The size of the bubbles represents sales, while the colour represents profit.
+        Bigger bubbles show higher sales, and the colour helps compare profit levels.
+    </p>
+
+    <img src="images/lab12-visualization2.png.png"
+         alt="Lab 12 Profit Distribution by City Bubble Map">
+
+
+    <h4>3. Order Concentration</h4>
+
+    <p><strong>Chart Type:</strong> Heat Map</p>
+
+    <p>
+        <strong>Objective:</strong> To identify areas where the number of orders is higher.
+    </p>
+
+    <p>
+        <strong>Why was it made?</strong>
+        It was made to find locations with more order activity and understand where orders are concentrated.
+    </p>
+
+    <p>
+        <strong>What does it show?</strong>
+        The darker areas show higher order concentration, while lighter areas show fewer orders.
+    </p>
+
+    <img src="images/lab12-visualization3.png.png"
+         alt="Lab 12 Order Concentration Heat Map">
+
+
+    <h4>Questions</h4>
+
+    <p>
+        <strong>i) Which states bring in the highest sales?</strong>
+    </p>
+
+    <p>
+        California and New York have the highest sales in the Sample Superstore data.
+        These states contribute a large part of the total sales.
+    </p>
+
+    <p>
+        <strong>California:</strong> 457688<br>
+        <strong>New York:</strong> 310876
+    </p>
+
+    <p>
+        <strong>ii) Do sales always mean profit?</strong>
+    </p>
+
+    <p>
+        No, high sales do not always mean high profit. Sometimes sales can be high
+        but profit can be low because of discounts, shipping costs and other expenses.
+    </p>
+
+    <p>
+        <strong>iii) What external factors might explain the differences?</strong>
+    </p>
+
+    <p>
+        The differences can be because of the local economy, customer demand,
+        transportation and delivery costs. Local customer preferences and
+        competition can also affect sales and profit.
+    </p>
+
+
+    <h4>Overall Dashboard Insight</h4>
+
+    <p>
+        This dashboard gives a location-based view of the Sample Superstore data.
+        It helps compare sales by state, profit and sales by city, and order
+        concentration across different locations.
+    </p>
+
+    <img src="images/lab12-dashboard.png.png"
+         alt="Lab 12 Geospatial Sales and Order Analysis Dashboard">
+
+</section>
 
 <script src="script.js"></script>
 
